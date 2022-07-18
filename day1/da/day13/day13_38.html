@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 박스나 패딩 기준으로 배경 이미지 위치 조절하기 -->
+<style>
+    .sample1{
+        border:5px solid darkred;
+        padding: 30px;
+        background-image: url("star.jfif");
+        background-repeat: no-repeat;
+    }
+    .sample2{
+        border:5px solid darkred;
+        padding: 30pc;
+        background-image: url("star.jfif");
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    }
+    .sample3{
+        border:5px solid darkred;
+        padding: 30px;
+        background-image: url("star.jfif");
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+</style>
+</head>
+<body>
+    <div class="sample1">
+        <p>background-origin지정 안함</p>
+        <P>background-origin지정 안함</P>
+    </div>
+ <br>
+    <div class="sample2">
+        <p>background-origin: border-box 지정함</p>
+        <p>background-origin: border-box 지정함</p>
+    </div>   
+    <br>
+    <div class="sample3">
+        <p>background-origin: content-box 지정함</p>
+        <p>background-origin: content-box 지정함</p>
+    </div>
+</body>
+</html>
